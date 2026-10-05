@@ -8,6 +8,16 @@ The implementation is designed for large simulation spaces and supports real-tim
 
 ---
 
+## Demo & Project Materials / 作品展示
+
+📁 **[bytime 作品展示 — Google Drive](https://drive.google.com/drive/folders/1ANUmz-SOVebbyzRI-PRdkLcsnMDsAirt?usp=drive_link)**
+
+- **中文：**演示视频、项目说明 PDF 和可运行游戏。
+- **English:** Demo video, project PDF, and playable game build.
+- **日本語：**デモ動画、プロジェクト説明 PDF、プレイ可能なゲーム。
+
+---
+
 ## Multi-language Documentation
 
 Detailed technical documentation for the complete water simulation and rendering pipeline is available in three languages:
