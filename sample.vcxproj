@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{886725B4-11FC-4A4D-938B-77BD4ECC6D0C}</ProjectGuid>
+    <RootNamespace>sample</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Yuanshen</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AI\AnimStateMachine.h" />
+    <ClInclude Include="AI\BehaviorTree.h" />
+    <ClInclude Include="Collision\AABBUtils.h" />
+    <ClInclude Include="Collision\Collider.h" />
+    <ClInclude Include="Collision\CollisionManager.h" />
+    <ClInclude Include="Collision\OctreeNode.h" />
+    <ClInclude Include="Collision\VoxelBufferUploader.h" />
+    <ClInclude Include="Collision\VoxelGrid.h" />
+    <ClInclude Include="Core\Async\AsyncModelLoader.h" />
+    <ClInclude Include="Core\Async\AsyncResourceLoader.h" />
+    <ClInclude Include="Core\Async\DeferredTaskAPI.h" />
+    <ClInclude Include="Core\Async\DeferredTaskSystem.h" />
+    <ClInclude Include="Core\Async\LightweightMutex.h" />
+    <ClInclude Include="Core\Async\SpinLock.h" />
+    <ClInclude Include="Core\Async\ThreadPool.h" />
+    <ClInclude Include="Core\AudioManager.h" />
+    <ClInclude Include="Core\Camera.h" />
+    <ClInclude Include="Core\CursorManager.h" />
+    <ClInclude Include="Core\GameSystem.h" />
+    <ClInclude Include="Core\Graphics\CascadedShadowMap.h" />
+    <ClInclude Include="Core\Graphics\ConstantBufferStructs.h" />
+    <ClInclude Include="Core\Graphics\Renderer.h" />
+    <ClInclude Include="Core\Graphics\RenderTexture.h" />
+    <ClInclude Include="Core\Graphics\ShadowMapRenderer.h" />
+    <ClInclude Include="Core\Graphics\ShadowMeshCollector.h" />
+    <ClInclude Include="Core\Graphics\ShadowMeshCollector.hpp" />
+    <ClInclude Include="Core\Graphics\VertexStructs.h" />
+    <ClInclude Include="Core\Light.h" />
+    <ClInclude Include="Core\LightManager.h" />
+    <ClInclude Include="Core\SaveSystem.h" />
+    <ClInclude Include="Core\Shader\ShaderInclude.h" />
+    <ClInclude Include="Core\Shader\ShaderLoader.h" />
+    <ClInclude Include="Core\Shader\ShaderManager.h" />
+    <ClInclude Include="Core\Shader\ShaderReloader.h" />
+    <ClInclude Include="Core\Shader\ShaderResourceBinder.h" />
+    <ClInclude Include="Core\TextureMgr.h" />
+    <ClInclude Include="Core\TextureUploadQueue.h" />
+    <ClInclude Include="Core\Timer.h" />
+    <ClInclude Include="Effects\DecalRenderer.h" />
+    <ClInclude Include="Effects\EffectSystem.h" />
+    <ClInclude Include="Effects\IEffectRenderer.h" />
+    <ClInclude Include="Effects\MarchingCubes\MarchingCubesSurfaceMesh.h" />
+    <ClInclude Include="Effects\MarchingCubes\MarchingCubesSurfaceMeshGPU.h" />
+    <ClInclude Include="Effects\MarchingCubes\MarchingCubesTables.h" />
+    <ClInclude Include="Effects\MarchingCubes\MCVoxelClusterUploader.h" />
+    <ClInclude Include="Effects\MarchingCubes\OptimizedMarchingCubesMesher.h" />
+    <ClInclude Include="Effects\ParticleEffectRendererBase.h" />
+    <ClInclude Include="Effects\ParticleStructs.h" />
+    <ClInclude Include="Effects\ProjectilePreview\ArcLengthPathFollower.h" />
+    <ClInclude Include="Effects\ProjectilePreview\ProjectileFollowerManager.h" />
+    <ClInclude Include="Effects\ProjectilePreview\ProjectilePredictor.h" />
+    <ClInclude Include="Effects\ProjectilePreview\ProjectilePreviewRenderer.h" />
+    <ClInclude Include="Effects\Skybox.h" />
+    <ClInclude Include="Effects\SpecialEffects\FallingParticleRenderer.h" />
+    <ClInclude Include="Effects\SpecialEffects\FireBallEffectRenderer.h" />
+    <ClInclude Include="Effects\SpecialEffects\LakeSurfaceRenderer.h" />
+    <ClInclude Include="Effects\SpecialEffects\LaserRenderer.h" />
+    <ClInclude Include="Effects\SpecialEffects\SmokeEffectRenderer.h" />
+    <ClInclude Include="Effects\SpecialEffects\SwordTrail.h" />
+    <ClInclude Include="Effects\SpecialEffects\Water\FluidHeightFieldBuilder.h" />
+    <ClInclude Include="Effects\SpecialEffects\Water\FluidSurfaceMesh.h" />
+    <ClInclude Include="Effects\SpecialEffects\Water\FluidThicknessRenderer.h" />
+    <ClInclude Include="Effects\SpecialEffects\Water\WaterFluidParticleRenderer.h" />
+    <ClInclude Include="Effects\SPH\SPHGridUploader.h" />
+    <ClInclude Include="Effects\SPH\SPHSystem.h" />
+    <ClInclude Include="Effects\SPH\SPHVolumeBuilder.h" />
+    <ClInclude Include="Effects\SPH\SPHVolumeBuilderGPU.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="Model\FBXLoader.h" />
+    <ClInclude Include="Model\Model.h" />
+    <ClInclude Include="Model\ModelCacheLoader.h" />
+    <ClInclude Include="Model\OBJLoader.h" />
+    <ClInclude Include="Model\SkinnedMeshModel.h" />
+    <ClInclude Include="Scene\Character\Boss.h" />
+    <ClInclude Include="Scene\Character\Enemy_NPC.h" />
+    <ClInclude Include="Scene\Character\GBMonster.h" />
+    <ClInclude Include="Scene\Character\Hilichurl.h" />
+    <ClInclude Include="Scene\Character\Lumine.h" />
+    <ClInclude Include="Scene\Enemy.h" />
+    <ClInclude Include="Scene\EnemyManager.h" />
+    <ClInclude Include="Scene\Environment.h" />
+    <ClInclude Include="Scene\EventTrigger.h" />
+    <ClInclude Include="Scene\GameObject.h" />
+    <ClInclude Include="Scene\Ground.h" />
+    <ClInclude Include="Scene\Item\Interactable\AutumnDoor.h" />
+    <ClInclude Include="Scene\Item\Interactable\Gate.h" />
+    <ClInclude Include="Scene\Item\Interactable\Interactable.h" />
+    <ClInclude Include="Scene\Item\Item.h" />
+    <ClInclude Include="Scene\Item\ItemManager.h" />
+    <ClInclude Include="Scene\Player.h" />
+    <ClInclude Include="Scene\EnterExitBehavior.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="Scene\Town.h" />
+    <ClInclude Include="Scene\Weapon\Projectile.h" />
+    <ClInclude Include="Scene\Weapon\ProjectileManager.h" />
+    <ClInclude Include="UI\Base\ISpriteUI.h" />
+    <ClInclude Include="UI\Base\ScreenFader.h" />
+    <ClInclude Include="UI\Base\TweenManager.h" />
+    <ClInclude Include="UI\Base\UIAnimatedSprite.h" />
+    <ClInclude Include="UI\Base\UIButton.h" />
+    <ClInclude Include="UI\Base\UIElement.h" />
+    <ClInclude Include="UI\Base\UIInteractPrompt.h" />
+    <ClInclude Include="UI\Base\UIManager.h" />
+    <ClInclude Include="UI\Base\UIOverlayRenderer.h" />
+    <ClInclude Include="UI\Base\UISprite.h" />
+    <ClInclude Include="UI\Base\UISpriteRenderer.h" />
+    <ClInclude Include="UI\GameMenuModal.h" />
+    <ClInclude Include="UI\PauseModal.h" />
+    <ClInclude Include="UI\UILoadingScene.h" />
+    <ClInclude Include="UI\UIMainHUD.h" />
+    <ClInclude Include="UI\UITitleScene.h" />
+    <ClInclude Include="Utility\Debug\DebugBoundingBoxRenderer.h" />
+    <ClInclude Include="Utility\Debug\Debugproc.h" />
+    <ClInclude Include="Utility\Debug\DebugTriangleRenderer.h" />
+    <ClInclude Include="Utility\Debug\imgui\imconfig.h" />
+    <ClInclude Include="Utility\Debug\imgui\imgui.h" />
+    <ClInclude Include="Utility\Debug\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="Utility\Debug\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="Utility\Debug\imgui\imgui_internal.h" />
+    <ClInclude Include="Utility\Debug\imgui\imstb_rectpack.h" />
+    <ClInclude Include="Utility\Debug\imgui\imstb_textedit.h" />
+    <ClInclude Include="Utility\Debug\imgui\imstb_truetype.h" />
+    <ClInclude Include="Utility\DoubleLinkedList.h" />
+    <ClInclude Include="Utility\HashMap.h" />
+    <ClInclude Include="Utility\InputManager.h" />
+    <ClInclude Include="Utility\SimpleArray.h" />
+    <ClInclude Include="Utility\SimpleQueue.h" />
+    <ClInclude Include="Utility\SingletonBase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AI\AnimStateMachine.cpp" />
+    <ClCompile Include="Collision\AABBUtils.cpp" />
+    <ClCompile Include="Collision\CollisionManager.cpp" />
+    <ClCompile Include="Collision\OctreeNode.cpp" />
+    <ClCompile Include="Collision\VoxelBufferUploader.cpp" />
+    <ClCompile Include="Collision\VoxelGrid.cpp" />
+    <ClCompile Include="Core\Async\AsyncModelLoader.cpp" />
+    <ClCompile Include="Core\Async\AsyncResourceLoader.cpp" />
+    <ClCompile Include="Core\Async\DeferredTaskSystem.cpp" />
+    <ClCompile Include="Core\AudioManager.cpp" />
+    <ClCompile Include="Core\Camera.cpp" />
+    <ClCompile Include="Core\CursorManager.cpp" />
+    <ClCompile Include="Core\GameSystem.cpp" />
+    <ClCompile Include="Core\Graphics\CascadedShadowMap.cpp" />
+    <ClCompile Include="Core\Graphics\Renderer.cpp" />
+    <ClCompile Include="Core\Graphics\RenderTexture.cpp" />
+    <ClCompile Include="Core\Graphics\ShadowMapRenderer.cpp" />
+    <ClCompile Include="Core\Light.cpp" />
+    <ClCompile Include="Core\LightManager.cpp" />
+    <ClCompile Include="Core\SaveSystem.cpp" />
+    <ClCompile Include="Core\Shader\ShaderLoader.cpp" />
+    <ClCompile Include="Core\Shader\ShaderManager.cpp" />
+    <ClCompile Include="Core\Shader\ShaderReloader.cpp" />
+    <ClCompile Include="Core\Shader\ShaderResourceBinder.cpp" />
+    <ClCompile Include="Core\TextureMgr.cpp" />
+    <ClCompile Include="Core\TextureUploadQueue.cpp" />
+    <ClCompile Include="Effects\DecalRenderer.cpp" />
+    <ClCompile Include="Effects\EffectSystem.cpp" />
+    <ClCompile Include="Effects\MarchingCubes\MarchingCubesSurfaceMesh.cpp" />
+    <ClCompile Include="Effects\MarchingCubes\MarchingCubesSurfaceMeshGPU.cpp" />
+    <ClCompile Include="Effects\MarchingCubes\MarchingCubesTables.cpp" />
+    <ClCompile Include="Effects\MarchingCubes\MCVoxelClusterUploader.cpp" />
+    <ClCompile Include="Effects\MarchingCubes\OptimizedMarchingCubesMesher.cpp" />
+    <ClCompile Include="Effects\ParticleEffectRendererBase.cpp" />
+    <ClCompile Include="Effects\ProjectilePreview\ProjectilePredictor.cpp" />
+    <ClCompile Include="Effects\ProjectilePreview\ProjectilePreviewRenderer.cpp" />
+    <ClCompile Include="Effects\Skybox.cpp" />
+    <ClCompile Include="Effects\SpecialEffects\FallingParticleRenderer.cpp" />
+    <ClCompile Include="Effects\SpecialEffects\FireBallEffectRenderer.cpp" />
+    <ClCompile Include="Effects\SpecialEffects\LakeSurfaceRenderer.cpp" />
+    <ClCompile Include="Effects\SpecialEffects\LaserRenderer.cpp" />
+    <ClCompile Include="Effects\SpecialEffects\SmokeEffectRenderer.cpp" />
+    <ClCompile Include="Effects\SpecialEffects\SwordTrail.cpp" />
+    <ClCompile Include="Effects\SpecialEffects\Water\FluidHeightFieldBuilder.cpp" />
+    <ClCompile Include="Effects\SpecialEffects\Water\FluidSurfaceMesh.cpp" />
+    <ClCompile Include="Effects\SpecialEffects\Water\FluidThicknessRenderer.cpp" />
+    <ClCompile Include="Effects\SpecialEffects\Water\WaterFluidParticleRenderer.cpp" />
+    <ClCompile Include="Effects\SPH\SPHGridUploader.cpp" />
+    <ClCompile Include="Effects\SPH\SPHSystem.cpp" />
+    <ClCompile Include="Effects\SPH\SPHVolumeBuilder.cpp" />
+    <ClCompile Include="Effects\SPH\SPHVolumeBuilderGPU.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Model\FBXLoader.cpp" />
+    <ClCompile Include="Model\Model.cpp" />
+    <ClCompile Include="Model\ModelCacheLoader.cpp" />
+    <ClCompile Include="Model\OBJLoader.cpp" />
+    <ClCompile Include="Model\SkinnedMeshModel.cpp" />
+    <ClCompile Include="Scene\Character\Boss.cpp" />
+    <ClCompile Include="Scene\Character\Enemy_NPC.cpp" />
+    <ClCompile Include="Scene\Character\GBMonster.cpp" />
+    <ClCompile Include="Scene\Character\Hilichurl.cpp" />
+    <ClCompile Include="Scene\Character\Lumine.cpp" />
+    <ClCompile Include="Scene\Enemy.cpp" />
+    <ClCompile Include="Scene\EnemyManager.cpp" />
+    <ClCompile Include="Scene\Environment.cpp" />
+    <ClCompile Include="Scene\GameObject.cpp" />
+    <ClCompile Include="Scene\Ground.cpp" />
+    <ClCompile Include="Scene\Item\Interactable\AutumnDoor.cpp" />
+    <ClCompile Include="Scene\Item\Interactable\Gate.cpp" />
+    <ClCompile Include="Scene\Item\Interactable\Interactable.cpp" />
+    <ClCompile Include="Scene\Item\Item.cpp" />
+    <ClCompile Include="Scene\Item\ItemManager.cpp" />
+    <ClCompile Include="Scene\Player.cpp" />
+    <ClCompile Include="Scene\EnterExitBehavior.cpp" />
+    <ClCompile Include="Scene\Scene.cpp" />
+    <ClCompile Include="Scene\Town.cpp" />
+    <ClCompile Include="Scene\Weapon\Projectile.cpp" />
+    <ClCompile Include="Scene\Weapon\ProjectileManager.cpp" />
+    <ClCompile Include="UI\Base\ScreenFader.cpp" />
+    <ClCompile Include="UI\Base\TweenManager.cpp" />
+    <ClCompile Include="UI\Base\UIAnimatedSprite.cpp" />
+    <ClCompile Include="UI\Base\UIButton.cpp" />
+    <ClCompile Include="UI\Base\UIInteractPrompt.cpp" />
+    <ClCompile Include="UI\Base\UIManager.cpp" />
+    <ClCompile Include="UI\Base\UIOverlayRenderer.cpp" />
+    <ClCompile Include="UI\Base\UISpriteRenderer.cpp" />
+    <ClCompile Include="UI\GameMenuModal.cpp" />
+    <ClCompile Include="UI\UILoadingScene.cpp" />
+    <ClCompile Include="UI\UIMainHUD.cpp" />
+    <ClCompile Include="Utility\Debug\DebugBoundingBoxRenderer.cpp" />
+    <ClCompile Include="Utility\Debug\Debugproc.cpp" />
+    <ClCompile Include="Utility\Debug\DebugTriangleRenderer.cpp" />
+    <ClCompile Include="Utility\Debug\imgui\imgui.cpp" />
+    <ClCompile Include="Utility\Debug\imgui\imgui_draw.cpp" />
+    <ClCompile Include="Utility\Debug\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Utility\Debug\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Utility\Debug\imgui\imgui_tables.cpp" />
+    <ClCompile Include="Utility\Debug\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Utility\InputManager.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

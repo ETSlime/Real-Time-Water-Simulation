@@ -1,0 +1,52 @@
+# Blender 4.3.2 MTL File: 'None'
+# www.blender.org
+
+newmtl Lime__vray_Bark
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000 
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd Lime._Bush_bark_12_diff.jpg
+map_refl Lime._Refl_Bush_bark_12_bump.jpg
+map_Bump Lime._Bush_bark_12_bump.jpg
+
+newmtl Lime__vray_Bark02
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000 
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd Lime._Buxus_stem_01_diff.jpg
+
+newmtl Lime__vray_Leaf01
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000 
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd Lime._Diff_Buxus_leaf_0301_diff.jpg
+map_refl Lime._Buxus_leaf_03_refl.jpg
+map_d Lime._Buxus_leaf_03_opac.jpg
+map_Bump Lime._Buxus_leaf_03_bump.jpg
+
+newmtl Lime__vray_Leaf02
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000 
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd Lime._Diff_0_Buxus_leaf_0301_diff.jpg
+map_refl Lime._Buxus_leaf_03_refl.jpg
+map_d Lime._Buxus_leaf_03_opac.jpg
+map_Bump Lime._Buxus_leaf_03_bump.jpg
